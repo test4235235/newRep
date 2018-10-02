@@ -1,0 +1,15 @@
+pageObjects\UserAccountPage.class
+utilities\MsExcelUtility.class
+utilities\InitWebDriver.class
+stepDefinitions\LoginAutomationPracticeStepDefinition.class
+utilities\WebDriverUtils.class
+stepDefinitions\viewOrdHistAutomPractStepDefinition.class
+stepDefinitions\LoginFreeCRMStepDefinition.class
+pageObjects\RegisterNewUserPage.class
+utilities\Utils.class
+dataset\TestDatasets.class
+pageObjects\LoginPage.class
+stepDefinitions\GoogleStepDefinition.class
+appModules\TestRegisterNewUserModule.class
+stepDefinitions\createUserAutomationPracticeStepDefinition.class
+appModules\TestUserAccountModule.class
