@@ -75,4 +75,26 @@ public class WebDriverUtils {
             return false;
         }
     }
+
+    public boolean setTextForField(WebElement element, String text){
+        try {
+            element.sendKeys(text);
+            return true;
+        }
+        catch (Exception e) {
+            log.info("exception",e);
+            throw e;
+        }
+    }
+
+    public boolean clickButon(WebElement element){
+        try {
+            element.click();
+            return true;
+        }
+        catch (Exception e) {
+            log.info("exception",e);
+            throw e;
+        }
+    }
 }
