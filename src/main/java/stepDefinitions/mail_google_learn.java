@@ -1,6 +1,5 @@
 package stepDefinitions;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import org.apache.log4j.Logger;
@@ -69,14 +68,29 @@ public class mail_google_learn extends InitWebDriver {
 
     @Then("^type receiver mail \"([^\"]*)\"$")
     public void typeReceiverMail(String MailReceiver) throws InterruptedException{
-        Thread.sleep(5000);
-        loginform.receiveraddress(MailReceiver);
+       loginform.receiveraddress(MailReceiver);
     }
 
     @Then("^type \"([^\"]*)\" in message title$")
     public void typeInMessageTitle(String MailTitle) {
         loginform.setSubjectofmessage(MailTitle);
     }
+
+//    @Then("^click <Dodanie załącznika> \"([^\"]*)\"$")
+//    public void clickDodanieZałącznika(String attachmentpath) throws InterruptedException {
+//        loginform.setMessageBody(attachmentpath);
+//        loginform.clickmessagebody();
+//        Actions a= new Actions(driver);
+//        a.sendKeys(Keys.chord(Keys.CONTROL,"a")).build().perform();
+//        a.sendKeys(Keys.chord(Keys.CONTROL,"x")).build().perform();
+//        loginform.clickbtnattachment();
+//        WebDriverWait wait= new WebDriverWait(driver, 3000);
+//        Thread.sleep(5000);
+//        Alert b = driver.switchTo().alert();
+//
+//        a.sendKeys(Keys.chord(Keys.CONTROL,"v")).build().perform();
+//       a.sendKeys(Keys.ENTER).build().perform();
+//    }
 
     @Then("^type in message body text \"([^\"]*)\"$")
     public void typeInMessageBodyText(String mailMessage) {
@@ -89,8 +103,10 @@ public class mail_google_learn extends InitWebDriver {
     }
 
     @Then("^hit 'J' profile icon$")
-    public void hitJProfileIcon() {
+    public void hitJProfileIcon() throws InterruptedException {
         loginform.clickbuttonuserprofile();
+
+        Thread.sleep(5000);
     }
 
     @Then("^hit 'Wyloguj' button$")

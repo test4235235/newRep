@@ -29,23 +29,27 @@ public class LoginFormGoogle {
     private WebElement Utworzbutton;
 
     // User typein "Do:" jaroslawzaloga@wp.pl
-    @FindBy(xpath="//*[@id=\":a1\"]")
+    @FindBy(name="to")
     private WebElement receiveraddress;
 
     // User typein "Temat:" First automation test code mail"
-    @FindBy(xpath="//*[@id=\":aj\"]")
+    @FindBy(name="subjectbox")
     private WebElement subjectofmessage;
 
     // User typein "This is to confirm that first test code is ready and email is sent by application."
-    @FindBy(xpath="//*[@id=\":aj\"]")
+    @FindBy(css="div[aria-label=\"Treść wiadomości\"]")
     private WebElement messagebody;
 
+    @FindBy(xpath="//*[@id=\":bc\"]")
+    private WebElement btnattachment;
+
     // User hit "Wyślij"
-    @FindBy(xpath="//*[@id=\":kk\"]")
+    @FindBy(xpath="//*[@id=\":9c\"]")
     private WebElement btnwyslij;
 
     // User hit "J" icon
-    @FindBy(xpath="//*[@id=\"gb\"]/div[2]/div[3]/div/div[2]/div/a/span")
+ //   @FindBy(xpath="//*[@id=\"gb\"]/div[2]/div[3]/div/div[2]/div/a/span")
+    @FindBy(css="a[aria-label^=\"Konto Google:\"][aria-label$=\"gmail.com)\"]")
     private WebElement userprofile;
 
     // User hit <Wyloguj> button
@@ -91,8 +95,18 @@ public class LoginFormGoogle {
     public boolean setSubjectofmessage(String mailTitle){
         return wdUtils.setTextForField(subjectofmessage, mailTitle);
     }
+
+    public boolean clickbtnattachment() {
+        return wdUtils.clickButon(btnattachment);
+
+    }
+
     public boolean setMessageBody(String messageBody){
         return wdUtils.setTextForField(messagebody, messageBody);
+    }
+
+    public boolean clickmessagebody(){
+        return wdUtils.clickButon(messagebody);
     }
     public boolean clickbuttonwyslij(){
         return wdUtils.clickButon(btnwyslij);

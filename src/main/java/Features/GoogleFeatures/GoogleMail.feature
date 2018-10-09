@@ -15,3 +15,4 @@ Given type webpage url for gmail home page "https://www.google.com/intl/pl/gmail
     Then hit 'Wyslij' button
     Then hit 'J' profile icon
     Then hit 'Wyloguj' button
+
