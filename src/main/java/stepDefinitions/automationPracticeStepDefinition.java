@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import pageObjects.UserAccountPage;
 import utilities.InitWebDriver;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -13,17 +14,19 @@ import pageObjects.LoginPage;
 import utilities.Utils;
 
 
-public class LoginAutomationPracticeStepDefinition extends InitWebDriver {
+public class automationPracticeStepDefinition extends InitWebDriver {
   private String url;
   LoginPage pageLogin;
+  UserAccountPage userAccountPage;
   public static Logger log;
 
-  public LoginAutomationPracticeStepDefinition(){
+  public automationPracticeStepDefinition(){
     url = "http://automationpractice.com/index.php";
     initWebDriver();
     Utils utils = new Utils();
     log = utils.initLogger();
     pageLogin = new LoginPage(driver);
+    userAccountPage = new UserAccountPage(driver);
   }
 
   @Given("^user is on automation practice web page$")
@@ -66,6 +69,30 @@ public class LoginAutomationPracticeStepDefinition extends InitWebDriver {
     String linkUserName = pageLogin.getLinkUserFullname().getText();
     Assert.assertTrue(linkUserName.equals("Antoni Giez"));
     log.info("user is logged in, username - " + linkUserName);
+  }
+
+  @Given("^user is logged in to account$")
+  public void user_logged_in_account() throws Exception{
+    String uname = userAccountPage.getUserNameNSurname();
+    Assert.assertEquals(uname, "Antoni Giez");
+  }
+
+  @When("^user click link to history order$")
+  public void user_click_link_order_history() throws Exception{
+    userAccountPage.clickLinkOrderAndHistory();
+  }
+
+  @Then("^user see page history order$")
+  public void user_view_order_history_page() throws Exception{
+    String orderHistoryMessage = userAccountPage.getTxtUserHistoryMessage();
+    Assert.assertEquals(orderHistoryMessage, "Here are the orders you've placed since your account was created.");
+  }
+
+  @Then("^user come back to main account page and log out$")
+  public void come_back_main_account_and_log_out() throws Exception{
+    //back to your account
+    userAccountPage.clickBtnBackToAccount();
+    userAccountPage.clickBtnLogOut();
   }
 
   @AfterClass
