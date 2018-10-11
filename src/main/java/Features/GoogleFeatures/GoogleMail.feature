@@ -6,11 +6,11 @@ Given type webpage url for gmail home page "https://www.google.com/intl/pl/gmail
     When hit <Zaloguj się>
     Then typein user login "lozagajarek@gmail.com"
     Then click <Dalejlogin>
-    Then typein user password "Rudyna102"
+    Then typein user password "xxxx"
     Then click <Dalejpassword>
     Then click <Utwórz>
     Then type receiver mail "jaroslawzaloga@wp.pl"
-#    Then type receiver mail "joanna.biel@bbh.com; bartlomiej.bojko@bbh.com; pawel.rachwal@bbh.com; jaroslawzaloga@wp.pl"
+#    Then type receiver mail ""
     Then type "Greetings from Warsaw-first automation test" in message title
     Then click <add photo> "https://imagizer.imageshack.us/a/img923/6069/VY1ehD.jpg"
     #"https://drive.google.com/open?id=1Dz18daKxHfhiCyZ-PNMJiSiPLTl_wZew"
