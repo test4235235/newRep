@@ -4,12 +4,12 @@ Feature: First_automation_test_mail
 
 Given type webpage url for gmail home page "https://www.google.com/intl/pl/gmail/about/#"
     When hit <Zaloguj się>
-    Then typein user login "lozagajarek@gmail.com"
+    Then typein user login "aaaaa"
     Then click <Dalejlogin>
     Then typein user password "xxxx"
     Then click <Dalejpassword>
     Then click <Utwórz>
-    Then type receiver mail "jaroslawzaloga@wp.pl"
+    Then type receiver mail "yyyy"
 #    Then type receiver mail ""
     Then type "Greetings from Warsaw-first automation test" in message title
     Then click <add photo> "https://imagizer.imageshack.us/a/img923/6069/VY1ehD.jpg"
