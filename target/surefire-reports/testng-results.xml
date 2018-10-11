@@ -2,21 +2,21 @@
 <testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="BDD Test Suite" duration-ms="97585" started-at="2018-10-02T08:47:02Z" finished-at="2018-10-02T08:48:40Z">
+  <suite name="BDD Test Suite" duration-ms="82517" started-at="2018-10-03T08:36:45Z" finished-at="2018-10-03T08:38:08Z">
     <groups>
       <group name="cucumber">
-        <method signature="TestRunnerAutomationPractice.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunnerAutomationPractice@7c0e2abd]" name="feature" class="MyRunner.TestRunnerAutomationPractice"/>
-        <method signature="TestRunnerFreeCRM.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunnerFreeCRM@4de8b406]" name="feature" class="MyRunner.TestRunnerFreeCRM"/>
-        <method signature="TestRunnerGoogle.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunnerGoogle@3c756e4d]" name="feature" class="MyRunner.TestRunnerGoogle"/>
+        <method signature="TestRunnerAutomationPractice.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunnerAutomationPractice@6d78f375]" name="feature" class="MyRunner.TestRunnerAutomationPractice"/>
+        <method signature="TestRunnerFreeCRM.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunnerFreeCRM@548b7f67]" name="feature" class="MyRunner.TestRunnerFreeCRM"/>
+        <method signature="TestRunnerGoogle.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunnerGoogle@7ac7a4e4]" name="feature" class="MyRunner.TestRunnerGoogle"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Workshop Sample" duration-ms="97585" started-at="2018-10-02T08:47:02Z" finished-at="2018-10-02T08:48:40Z">
+    <test name="Workshop Sample" duration-ms="82517" started-at="2018-10-03T08:36:45Z" finished-at="2018-10-03T08:38:08Z">
       <class name="MyRunner.TestRunnerGoogle">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:MyRunner.TestRunnerGoogle@3c756e4d]" name="setUpClass" is-config="true" duration-ms="56" started-at="2018-10-02T08:47:15Z" finished-at="2018-10-02T08:47:15Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:MyRunner.TestRunnerGoogle@7ac7a4e4]" name="setUpClass" is-config="true" duration-ms="23" started-at="2018-10-03T08:37:01Z" finished-at="2018-10-03T08:37:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunnerGoogle@3c756e4d]" name="feature" duration-ms="26947" started-at="2018-10-02T08:47:15Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-10-02T08:47:42Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunnerGoogle@7ac7a4e4]" name="feature" duration-ms="23309" started-at="2018-10-03T08:37:01Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-10-03T08:37:24Z">
           <params>
             <param index="0">
               <value>
@@ -27,17 +27,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:MyRunner.TestRunnerGoogle@3c756e4d]" name="tearDownClass" is-config="true" duration-ms="118" started-at="2018-10-02T08:47:42Z" finished-at="2018-10-02T08:47:42Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:MyRunner.TestRunnerGoogle@7ac7a4e4]" name="tearDownClass" is-config="true" duration-ms="82" started-at="2018-10-03T08:37:24Z" finished-at="2018-10-03T08:37:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- MyRunner.TestRunnerGoogle -->
       <class name="MyRunner.TestRunnerFreeCRM">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:MyRunner.TestRunnerFreeCRM@4de8b406]" name="setUpClass" is-config="true" duration-ms="280" started-at="2018-10-02T08:47:02Z" finished-at="2018-10-02T08:47:03Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:MyRunner.TestRunnerFreeCRM@548b7f67]" name="setUpClass" is-config="true" duration-ms="314" started-at="2018-10-03T08:36:45Z" finished-at="2018-10-03T08:36:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunnerFreeCRM@4de8b406]" name="feature" duration-ms="11911" started-at="2018-10-02T08:47:03Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-10-02T08:47:15Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunnerFreeCRM@548b7f67]" name="feature" duration-ms="14741" started-at="2018-10-03T08:36:46Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-10-03T08:37:01Z">
           <params>
             <param index="0">
               <value>
@@ -48,17 +48,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:MyRunner.TestRunnerFreeCRM@4de8b406]" name="tearDownClass" is-config="true" duration-ms="133" started-at="2018-10-02T08:47:15Z" finished-at="2018-10-02T08:47:15Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:MyRunner.TestRunnerFreeCRM@548b7f67]" name="tearDownClass" is-config="true" duration-ms="113" started-at="2018-10-03T08:37:01Z" finished-at="2018-10-03T08:37:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
       </class> <!-- MyRunner.TestRunnerFreeCRM -->
       <class name="MyRunner.TestRunnerAutomationPractice">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:MyRunner.TestRunnerAutomationPractice@7c0e2abd]" name="setUpClass" is-config="true" duration-ms="26" started-at="2018-10-02T08:47:42Z" finished-at="2018-10-02T08:47:42Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:MyRunner.TestRunnerAutomationPractice@6d78f375]" name="setUpClass" is-config="true" duration-ms="25" started-at="2018-10-03T08:37:24Z" finished-at="2018-10-03T08:37:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunnerAutomationPractice@7c0e2abd]" name="feature" duration-ms="20857" started-at="2018-10-02T08:47:42Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-10-02T08:48:03Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunnerAutomationPractice@6d78f375]" name="feature" duration-ms="17199" started-at="2018-10-03T08:37:24Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-10-03T08:37:41Z">
           <params>
             <param index="0">
               <value>
@@ -69,7 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunnerAutomationPractice@7c0e2abd]" name="feature" duration-ms="15506" started-at="2018-10-02T08:48:03Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-10-02T08:48:18Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunnerAutomationPractice@6d78f375]" name="feature" duration-ms="12088" started-at="2018-10-03T08:37:41Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-10-03T08:37:53Z">
           <params>
             <param index="0">
               <value>
@@ -80,7 +80,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunnerAutomationPractice@7c0e2abd]" name="feature" duration-ms="21138" started-at="2018-10-02T08:48:18Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-10-02T08:48:40Z">
+        <test-method status="FAIL" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:MyRunner.TestRunnerAutomationPractice@6d78f375]" name="feature" duration-ms="14261" started-at="2018-10-03T08:37:53Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-10-03T08:38:08Z">
           <params>
             <param index="0">
               <value>
@@ -92,27 +92,27 @@
             <message>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[1]/div[1]/header/div[2]/div/div/nav/div[1]/a/span"}
   (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+  (Driver info: chromedriver=70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'LHWA5CD6191GC9', ip: '10.250.250.23', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+System info: host: 'JAREK-HP', ip: '10.250.250.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\PIOTR~1.SKO\AppDat...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52651}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: cb389070b5175cf8f4bf2904c8571ab9
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.16 (16ed95b41bb05..., userDataDir: C:\Users\Jarek\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55051}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 24fa1514e4e556fbaca6b34bd63efc2b
 *** Element info: {Using=xpath, value=//div[1]/div[1]/header/div[2]/div/div/nav/div[1]/a/span}]]>
             </message>
             <full-stacktrace>
               <![CDATA[cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[1]/div[1]/header/div[2]/div/div/nav/div[1]/a/span"}
   (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+  (Driver info: chromedriver=70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'LHWA5CD6191GC9', ip: '10.250.250.23', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+System info: host: 'JAREK-HP', ip: '10.250.250.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\PIOTR~1.SKO\AppDat...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52651}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: cb389070b5175cf8f4bf2904c8571ab9
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.16 (16ed95b41bb05..., userDataDir: C:\Users\Jarek\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55051}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 24fa1514e4e556fbaca6b34bd63efc2b
 *** Element info: {Using=xpath, value=//div[1]/div[1]/header/div[2]/div/div/nav/div[1]/a/span}
 at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
 at MyRunner.TestRunnerAutomationPractice.feature(TestRunnerAutomationPractice.java:32)
@@ -138,14 +138,14 @@ at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:62
 at java.lang.Thread.run(Thread.java:748)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[1]/div[1]/header/div[2]/div/div/nav/div[1]/a/span"}
   (Session info: chrome=69.0.3497.100)
-  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+  (Driver info: chromedriver=70.0.3538.16 (16ed95b41bb05e565b11fb66ac33c660b721f778),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'LHWA5CD6191GC9', ip: '10.250.250.23', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+System info: host: 'JAREK-HP', ip: '10.250.250.95', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.42.591088 (7b2b2dca23cca0..., userDataDir: C:\Users\PIOTR~1.SKO\AppDat...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:52651}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
-Session ID: cb389070b5175cf8f4bf2904c8571ab9
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 70.0.3538.16 (16ed95b41bb05..., userDataDir: C:\Users\Jarek\AppData\Loca...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:55051}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 69.0.3497.100, webStorageEnabled: true}
+Session ID: 24fa1514e4e556fbaca6b34bd63efc2b
 *** Element info: {Using=xpath, value=//div[1]/div[1]/header/div[2]/div/div/nav/div[1]/a/span}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -175,7 +175,7 @@ at ✽.Given user is logged in to account(userHistoryAutomationPractice.feature:
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:MyRunner.TestRunnerAutomationPractice@7c0e2abd]" name="tearDownClass" is-config="true" duration-ms="412" started-at="2018-10-02T08:48:40Z" finished-at="2018-10-02T08:48:40Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:MyRunner.TestRunnerAutomationPractice@6d78f375]" name="tearDownClass" is-config="true" duration-ms="215" started-at="2018-10-03T08:38:08Z" finished-at="2018-10-03T08:38:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -1,6 +1,7 @@
 package pageObjects;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -25,7 +26,8 @@ public class LoginFormGoogle {
 
     // User hit <Utwórz> button
     //@FindBy(xpath="//*[@id=\":78\"]/div/div")
-    @FindBy(css = "#\\3a 4s > div > div")
+    //@FindBy(css = "#\\3a 4s > div > div")
+    @FindBy(xpath="//div[text()=\"Utwórz\"]")
     private WebElement Utworzbutton;
 
     // User typein "Do:" jaroslawzaloga@wp.pl
@@ -36,15 +38,32 @@ public class LoginFormGoogle {
     @FindBy(name="subjectbox")
     private WebElement subjectofmessage;
 
+    // User hit <Attach photo> button
+    @FindBy(css="div[data-tooltip=\"Wstaw zdjęcie\"]")
+    private WebElement addphoto;
+
+    // User hit <Adres intertowy (URL)> button
+    //@FindBy(css="div:contains(\"Adres internetowy (URL)\")")
+    @FindBy(xpath="//div[text()=\"Adres internetowy (URL)\"]" )
+    private WebElement TabAdresInternetowy;
+
+    @FindBy(xpath="//*[@id=\":p\"]")
+    private WebElement imagePath;
+
+    @FindBy(id="picker:ap:2")
+    private WebElement btnWstaw;
+
     // User typein "This is to confirm that first test code is ready and email is sent by application."
     @FindBy(css="div[aria-label=\"Treść wiadomości\"]")
     private WebElement messagebody;
+
 
     @FindBy(xpath="//*[@id=\":bc\"]")
     private WebElement btnattachment;
 
     // User hit "Wyślij"
-    @FindBy(xpath="//*[@id=\":9c\"]")
+    //@FindBy(xpath="//*[@id=\":9c\"]")
+    @FindBy(css = "div[data-tooltip=\"Wyślij \u202A(Ctrl+Enter)\u202C\"]")
     private WebElement btnwyslij;
 
     // User hit "J" icon
@@ -73,18 +92,22 @@ public class LoginFormGoogle {
     }
 
     public boolean clickButtonLoginNext(){
+
         return wdUtils.clickButon(buttonLoginNext);
     }
 
     public boolean setuserpassword(String UserPassword){
+
         return wdUtils.setTextForField(textpassword, UserPassword);
     }
 
     public boolean clickButtonPasswordNext(){
+
         return wdUtils.clickButon(buttonPasswordNext);
     }
 
     public boolean clickUtworzBtn(){
+
         return wdUtils.clickButon(Utworzbutton);
     }
 
@@ -98,10 +121,37 @@ public class LoginFormGoogle {
 
     public boolean clickbtnattachment() {
         return wdUtils.clickButon(btnattachment);
+    }
 
+    public boolean addphotoicon() {
+        return wdUtils.clickButon(addphoto);
+    }
+
+    public boolean TabAdresInternetowy() {
+        log.info("Link text - " + TabAdresInternetowy.getText());
+        return wdUtils.clickButon(TabAdresInternetowy);
+    }
+
+    public boolean clickImagePath(){
+        return wdUtils.clickButon(imagePath);
+    }
+
+    public boolean clickButtonWstaw(){
+        return wdUtils.clickButon(btnWstaw);
+    }
+
+    public boolean setImagePath(String path) throws InterruptedException {
+        boolean retValue = wdUtils.setTextForField(imagePath, path);
+        Thread.sleep(2000);
+        imagePath.sendKeys(Keys.SPACE);
+        return retValue;
     }
 
     public boolean setMessageBody(String messageBody){
+        wdUtils.setTextForField(messagebody, Keys.ENTER.toString());
+        wdUtils.setTextForField(messagebody, Keys.ENTER.toString());
+        wdUtils.setTextForField(messagebody, Keys.ENTER.toString());
+        wdUtils.setTextForField(messagebody, Keys.TAB.toString());
         return wdUtils.setTextForField(messagebody, messageBody);
     }
 

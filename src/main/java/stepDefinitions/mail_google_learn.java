@@ -3,12 +3,15 @@ package stepDefinitions;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.AfterClass;
 import pageObjects.AutomationTestMail;
 import pageObjects.LoginFormGoogle;
 import utilities.InitWebDriver;
 import utilities.Utils;
 
+import java.util.List;
 import java.util.Set;
 
 public class mail_google_learn extends InitWebDriver {
@@ -67,14 +70,43 @@ public class mail_google_learn extends InitWebDriver {
     }
 
     @Then("^type receiver mail \"([^\"]*)\"$")
-    public void typeReceiverMail(String MailReceiver) throws InterruptedException{
+    public void typeReceiverMail(String MailReceiver){
        loginform.receiveraddress(MailReceiver);
     }
 
     @Then("^type \"([^\"]*)\" in message title$")
-    public void typeInMessageTitle(String MailTitle) {
+    public void typeInMessageTitle(String MailTitle) throws InterruptedException {
         loginform.setSubjectofmessage(MailTitle);
+        Thread.sleep(1000);
     }
+
+    @Then("^click <add photo> \"([^\"]*)\"$")
+    public void addPhoto(String FindPhoto) throws InterruptedException{
+        loginform.addphotoicon();
+        Thread.sleep(5000);
+        List<WebElement> lstElements = driver.findElements(By.tagName("iframe"));
+        for(WebElement el : lstElements){
+            System.out.println("frame - " + el.getAttribute("id"));
+        }
+        String frameHandle = lstElements.get(lstElements.size()-1).getAttribute("id");
+        System.out.println("id of last frame - " + frameHandle + "\n\n\n");
+        driver.switchTo().frame(frameHandle);
+        loginform.TabAdresInternetowy();
+
+        loginform.clickImagePath();
+        loginform.setImagePath(FindPhoto);
+
+        Thread.sleep(5000);
+        loginform.clickButtonWstaw();
+    }
+
+//--------------------------------------------
+//    @Then("^click <Adres internetowy \\(URL\\)>$")
+//    public void click_Adres_internetowy_URL() throws InterruptedException {
+//        loginform.TabAdresInternetowy();
+//    }
+//---------------------------------------------
+
 
 //    @Then("^click <Dodanie załącznika> \"([^\"]*)\"$")
 //    public void clickDodanieZałącznika(String attachmentpath) throws InterruptedException {
@@ -93,7 +125,7 @@ public class mail_google_learn extends InitWebDriver {
 //    }
 
     @Then("^type in message body text \"([^\"]*)\"$")
-    public void typeInMessageBodyText(String mailMessage) {
+    public void typeInMessageBodyText(String mailMessage) throws InterruptedException {
         loginform.setMessageBody(mailMessage);
     }
 
@@ -110,8 +142,9 @@ public class mail_google_learn extends InitWebDriver {
     }
 
     @Then("^hit 'Wyloguj' button$")
-    public void hitWylogujButton() {
+    public void hitWylogujButton() throws InterruptedException {
         loginform.clicklogout();
+        Thread.sleep(4000);
     }
     @AfterClass
     public void closeBrowser(){

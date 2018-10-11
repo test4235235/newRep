@@ -19,7 +19,7 @@ public class LoginPage {
   @FindBy(xpath="//*[@id=\'email\']")
   private WebElement txtLoginEmail;
   //password
-  @FindBy(xpath="//*[@id=\'passwd\']")
+  @FindBy(xpath="//*[@id=\'password\']")
   private WebElement txtLoginPassword;
   //button login
   @FindBy(xpath="//*[@id=\'SubmitLogin\']")
